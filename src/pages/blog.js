@@ -10,12 +10,21 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const Blog = (props) => {
   const [blogs, setBlogs] = useState(props.allBlogs);
   const [count, setCount] = useState(2);
-
   const fetchData = async () => {
-    let d = await fetch(`/api/blogs/?count=${count + 2}`);
-    setCount(count + 2);
-    let data = await d.json();
-    setBlogs(data);
+    try {
+      const res = await fetch(`/api/blogs/?count=${count + 2}`);
+      if (!res.ok) throw new Error("Failed to fetch blogs");
+
+      const data = await res.json();
+
+      // Add only new blogs (avoid duplication)
+      const newData = data.slice(blogs.length);
+      setBlogs((prev) => [...prev, ...newData]);
+
+      setCount(count + 2);
+    } catch (error) {
+      console.error("Error fetching more blogs:", error);
+    }
   };
 
   return (
@@ -24,7 +33,7 @@ const Blog = (props) => {
         <InfiniteScroll
           dataLength={blogs.length} //This is important field to render the next data
           next={fetchData}
-          hasMore={props.allCount !== blogs.length}
+          hasMore={props.allCount > blogs.length}
           loader={<h4>Loading...</h4>}
           endMessage={
             <p style={{ textAlign: "center" }}>
