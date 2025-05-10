@@ -1,3 +1,4 @@
+/* .main - Ensures the main container scales on all devices */
 .main {
     min-height: 100vh;
     flex: 1;
@@ -7,19 +8,30 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+/* .blogItemh3 - Adjusts the title size and style */
 .blogItemh3 {
     cursor: pointer;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
+    text-align: center;
+    /* Centers the title */
 }
 
+/* .blogItemp - Controls the paragraph width, adjusts for mobile screens */
 .blogItemp {
     max-width: 45vw;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    /* Centers the text */
 }
 
+/* .btn - Adds styles to the button */
 .btn {
     color: white;
     background: rgb(34, 34, 34);
@@ -29,5 +41,47 @@
     font-size: 12px;
     margin-bottom: 22px;
     margin-top: 4px;
-    margin:10px
+    margin: 10px;
+    display: block;
+    text-align: center;
+    width: auto;
+    /* Keeps button size relative to its content */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjusts layout for small screens */
+    .main {
+        padding-top: 2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Adjusts the size of blog titles */
+    .blogItemh3 {
+        font-size: 1.25rem;
+        /* Smaller title on mobile */
+    }
+
+    /* Makes the paragraph take up more of the screen width */
+    .blogItemp {
+        max-width: 80vw;
+        /* Allows more content on the screen */
+        font-size: 14px;
+        /* Keeps text legible */
+    }
+
+    /* Button styling for mobile */
+    .btn {
+        font-size: 14px;
+        /* Slightly larger font for better touch on mobile */
+        padding: 10px;
+        margin: 10px 0;
+        /* Adds consistent margin */
+        width: 100%;
+        /* Makes the button full width on mobile */
+    }
+}
+
+/* Extra-small screen (mobile portrait*
