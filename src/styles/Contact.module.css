@@ -28,7 +28,7 @@ padding: 7px 0;
 }
 @media only screen and (max-width: 600px) {
     .container {
-        padding:  88vw;
-        margin: auto;
+        padding: 2vw;
+         margin: 59px
     }
 }
