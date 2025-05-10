@@ -12,18 +12,16 @@ const Blog = (props) => {
   const [count, setCount] = useState(2);
   const fetchData = async () => {
     try {
-      const res = await fetch(`/api/blogs/?count=${count + 2}`);
+      const res = await fetch(
+        `${window.location.origin}/api/blogs?count=${count + 2}`
+      );
       if (!res.ok) throw new Error("Failed to fetch blogs");
-
       const data = await res.json();
-
-      // Add only new blogs (avoid duplication)
       const newData = data.slice(blogs.length);
       setBlogs((prev) => [...prev, ...newData]);
-
       setCount(count + 2);
-    } catch (error) {
-      console.error("Error fetching more blogs:", error);
+    } catch (err) {
+      console.error("Error fetching more blogs:", err);
     }
   };
 
