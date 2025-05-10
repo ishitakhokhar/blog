@@ -1,0 +1,6 @@
+{
+  "title": "Exploring React Hooks: useEffect & useState",
+  "content": "React Hooks let you manage state and side effects in functional components. useState handles local component state, while useEffect handles tasks like fetching data, subscribing to events, or updating the DOM.",
+  "author": "Tina Snow",
+  "slug": "react-hooks-guide"
+}

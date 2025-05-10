@@ -1,0 +1,6 @@
+{
+  "title": "Using MongoDB with Mongoose in Node.js",
+  "content": "Mongoose is an ODM for MongoDB that simplifies database operations in Node.js. Define schemas, create models, and perform CRUD operations effortlessly. It also supports middleware, validation, and relationship handling.",
+  "author": "Tina Snow",
+  "slug": "mongodb-mongoose-node"
+}

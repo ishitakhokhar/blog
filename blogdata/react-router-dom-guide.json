@@ -1,0 +1,6 @@
+{
+  "title": "React Router Dom: A Complete Guide",
+  "content": "React Router DOM is essential for building SPAs with React. It enables routing with components like BrowserRouter, Route, Link, and useNavigate. Use it to define multiple pages and navigate between them easily.",
+  "author": "Tina Snow",
+  "slug": "react-router-dom-guide"
+}

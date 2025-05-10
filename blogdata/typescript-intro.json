@@ -1,0 +1,6 @@
+{
+  "title": "Intro to TypeScript for JavaScript Developers",
+  "content": "TypeScript adds static typing to JavaScript. It helps catch bugs early, improves IDE support, and enhances code readability. Start by installing TypeScript and converting .js files to .ts for stronger type safety.",
+  "author": "Tina Snow",
+  "slug": "typescript-intro"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Mastering Flexbox in CSS",
+  "content": "Flexbox is a CSS layout model that allows responsive alignment of elements. With properties like justify-content, align-items, and flex-direction, you can create flexible and adaptive layouts easily. It's an essential tool for modern web design.",
+  "author": "Tina Snow",
+  "slug": "css-flexbox-guide"
+}

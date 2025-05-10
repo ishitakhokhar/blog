@@ -1,0 +1,6 @@
+{
+  "title": "Building REST APIs with Express",
+  "content": "Express is a lightweight Node.js framework for building REST APIs. Use app.get, app.post, and middleware to create structured API endpoints that handle CRUD operations and serve data to the frontend.",
+  "author": "Tina Snow",
+  "slug": "rest-api-express"
+}

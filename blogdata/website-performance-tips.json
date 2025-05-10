@@ -1,0 +1,6 @@
+{
+  "title": "How to Optimize Website Performance",
+  "content": "Improve performance by minifying CSS and JS, compressing images, using lazy loading, and caching. Tools like Lighthouse and PageSpeed Insights help audit and optimize your site for faster loading.",
+  "author": "Tina Snow",
+  "slug": "website-performance-tips"
+}

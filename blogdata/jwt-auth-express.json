@@ -1,0 +1,6 @@
+{
+  "title": "Authentication with JWT in Express",
+  "content": "JWT (JSON Web Tokens) are used to implement stateless authentication in web applications. In Express, you can sign a JWT on login and verify it for protected routes, enabling secure access to API resources.",
+  "author": "Tina Snow",
+  "slug": "jwt-auth-express"
+}

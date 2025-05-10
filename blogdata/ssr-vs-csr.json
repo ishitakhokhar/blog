@@ -1,0 +1,6 @@
+{
+  "title": "Client vs Server Side Rendering",
+  "content": "CSR renders content on the client using JavaScript, offering rich interactivity. SSR generates content on the server and sends HTML to the client, improving SEO and load time. Choose based on your app's needs.",
+  "author": "Tina Snow",
+  "slug": "ssr-vs-csr"
+}

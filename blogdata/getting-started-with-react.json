@@ -1,0 +1,6 @@
+{
+  "title": "How to Get Started with React",
+  "content": "React is a powerful JavaScript library for building user interfaces. To start with React, you should install Node.js and npm, then use Create React App with 'npx create-react-app my-app'. Learn the basics like components, JSX, props, and hooks (useState, useEffect). Once comfortable, explore routing with react-router-dom and API calls with Axios or Fetch. React's component-based structure helps maintain clean, scalable codebases.",
+  "author": "John Doe",
+  "slug": "getting-started-with-react"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Understanding JavaScript Closures",
+  "content": "Closures are functions that retain access to their lexical scope, even after the outer function has returned. They’re useful for maintaining state between function calls. For example, a counter function using a closure can remember its count across calls. Closures are widely used in callbacks, event listeners, and private variables.",
+  "author": "Tina Snow",
+  "slug": "javascript-closures-explained"
+}

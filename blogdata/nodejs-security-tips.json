@@ -1,0 +1,6 @@
+{
+  "title": "Securing Your Node.js App",
+  "content": "Security in Node.js apps includes validating inputs, using helmet for HTTP headers, hashing passwords, avoiding sensitive logs, and using environment variables. Follow best practices to prevent common vulnerabilities.",
+  "author": "Tina Snow",
+  "slug": "nodejs-security-tips"
+}
