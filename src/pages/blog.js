@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "../styles/Blog.module.css";
+import styles from "@/styles/Blog.module.css";
 import Link from "next/link";
 import * as fs from "fs";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -12,7 +12,7 @@ const Blog = (props) => {
   const [count, setCount] = useState(2);
 
   const fetchData = async () => {
-    let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 2}`);
+    let d = await fetch(`/api/blogs/?count=${count + 2}`);
     setCount(count + 2);
     let data = await d.json();
     setBlogs(data);
