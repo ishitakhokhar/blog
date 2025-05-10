@@ -18,8 +18,7 @@
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
-    text-align: center;
-    /* Centers the title */
+    /* text-align: center; */
 }
 
 /* .blogItemp - Controls the paragraph width, adjusts for mobile screens */
@@ -28,27 +27,39 @@
     font-size: 14px;
     line-height: 1.6;
     text-align: center;
-    /* Centers the text */
 }
 
-/* .btn - Adds styles to the button */
 .btn {
     color: white;
-    background: rgb(34, 34, 34);
-    padding: 7px 6px;
+    background: rgb(40, 40, 40);
+    padding: 4px 8px;
+    /* Consistent padding */
     cursor: pointer;
-    border-radius: 6px;
-    font-size: 12px;
-    margin-bottom: 22px;
-    margin-top: 4px;
-    margin: 10px;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 4px;
+    font-size: 9px;
+    /* Slightly smaller font to fit better */
+    margin: 10px auto;
     display: block;
     text-align: center;
-    width: auto;
-    /* Keeps button size relative to its content */
+    text-transform: uppercase;
+    width: 110px;
+    /* Slightly wider to accommodate text like "READ MORE" */
+    max-width: 110px;
+    /* Prevents stretching */
+    height: 24px;
+    /* Slightly taller to fit text */
+    line-height: 14px;
+    /* Vertically centers text */
+    box-sizing: border-box;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+    overflow: hidden;
+    /* Hides any overflow */
+    text-overflow: ellipsis;
+    /* Adds ellipsis if text is too long */
 }
-
-/* Mobile responsiveness */
+/* Tablet and smaller screens */
 @media (max-width: 768px) {
 
     /* Adjusts layout for small screens */
@@ -61,27 +72,50 @@
     /* Adjusts the size of blog titles */
     .blogItemh3 {
         font-size: 1.25rem;
-        /* Smaller title on mobile */
     }
 
     /* Makes the paragraph take up more of the screen width */
     .blogItemp {
         max-width: 80vw;
-        /* Allows more content on the screen */
         font-size: 14px;
-        /* Keeps text legible */
     }
 
     /* Button styling for mobile */
     .btn {
         font-size: 14px;
-        /* Slightly larger font for better touch on mobile */
-        padding: 10px;
-        margin: 10px 0;
-        /* Adds consistent margin */
+        padding: 7px 10px;
+        margin: 14px 0;
         width: 100%;
-        /* Makes the button full width on mobile */
     }
 }
 
-/* Extra-small screen (mobile portrait*
+/* Extra-small screens (mobile portrait, e.g., < 576px) */
+@media (max-width: 576px) {
+
+    /* Further adjust layout for very small screens */
+    .main {
+        padding-top: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Further reduce title size for better fit */
+    .blogItemh3 {
+        font-size: 1.1rem;
+    }
+
+    /* Maximize paragraph width for readability */
+    .blogItemp {
+        max-width: 90vw;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* Ensure button remains touch-friendly */
+    .btn {
+        font-size: 13px;
+        padding: 8px;
+        margin: 8px 0;
+        width: 100%;
+    }
+}
